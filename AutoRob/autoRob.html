@@ -1,10 +1,11 @@
 <style>
     #my-container {
-        width: 100%;
+        width: 1200px;
         height: auto;
         font-family: 'Georgia, serif';
         background: #000000;
         color: #FFFFFF;
+        margin: 0 auto;
     }
     #my-container a {
         text-decoration: none;
@@ -17,20 +18,18 @@
     }
     #header-logo {
         display: block;
-        height: 438px;
-        width: 900px;
+        height: 450px;
+        width: 1200px;
         margin: 0 auto;
+        border-bottom-style: solid;
+        border-bottom-color: #E47E1F;
+        
     }
     #my-nav-top {
         font-size: 20px;
         color: #FFFFFF;
         width: 900px;
         margin: 0 auto;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #F8B600;
-        border-top: none;
-        border-bottom: none;
     }
 
     #my-nav-top ul {
@@ -42,15 +41,20 @@
         display: inline-block;
         padding: 20px;
         margin-left: 32px;
+        font-weight: bold;
+        transition: 0.4s ease-out;
+        -moz-transition: 0.4s ease-out;
+        -webkit-transition: 0.4s ease-out;
+        -o-transition: 0.2s ease-out;
+        border-radius: 50px;
     }
     #my-nav-top li:hover {
-        text-decoration: underline;
-        color: #DC012D;
+        background-color:#E47E1F;
     }
 
     #my-content-wrapper {
-        width: 900px;
-        height: 100%;
+        width: 1200px;
+        height: auto;
         background-color: #000000;
         color: #FFFFFF;
         margin: 0 auto;
@@ -121,6 +125,10 @@
         margin-bottom: 100px;
         margin-top: 10px;
         float: left;
+        transition: 0.4s ease-out;
+        -moz-transition: 0.4s ease-out;
+        -webkit-transition: 0.4s ease-out;
+        -o-transition: 0.4s ease-out;
     }
 
     .map {
@@ -141,10 +149,18 @@
         line-height: 50px;
     }
 
+    .logo {
+
+    }
+
+    .logo:hover {
+       width: 200px;
+       height: 170px;
+    }
 </style>
 <div id="my-container">
     <div id="my-header">
-        <img src="http://www.webmasterzy.com/autorob/img/pakiet1.jpg" alt='header' id='header-logo'/>
+        <img src="http://imageshack.us/a/img843/196/98360631.jpg" alt='header' id='header-logo'/>
         <div id="my-nav-top">
            <ul>
                <li><a href="#">O mnie</a></li>
