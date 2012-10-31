@@ -1,16 +1,17 @@
 <style>
     #my-container {
         width: 1200px;
-        height: auto;
         font-family: 'Georgia, serif';
         background: #000000;
         color: #FFFFFF;
         margin: 0 auto;
     }
+
     #my-container a {
         text-decoration: none;
         color: #FFFFFF;
     }
+
     #my-header {
         width: 100%;
         height: auto;
@@ -19,7 +20,7 @@
     #header-logo {
         display: block;
         height: 450px;
-        width: 1200px;
+        width: 100%;
         margin: 0 auto;
         border-bottom-style: solid;
         border-bottom-color: #E47E1F;
@@ -36,99 +37,118 @@
         margin: 0 auto;
         padding-top:10px;
     }
+
     #my-nav-top li {
         list-style: none;
         display: inline-block;
         padding: 20px;
-        margin-left: 32px;
         font-weight: bold;
-        transition: 0.4s ease-out;
-        -moz-transition: 0.4s ease-out;
-        -webkit-transition: 0.4s ease-out;
+        transition: 0.2s ease-out;
+        -moz-transition: 0.2s ease-out;
+        -webkit-transition: 0.2s ease-out;
         -o-transition: 0.2s ease-out;
         border-radius: 50px;
+        margin-left: 40px;
     }
+
     #my-nav-top li:hover {
         background-color:#E47E1F;
     }
 
     #my-content-wrapper {
-        width: 1200px;
-        height: auto;
+        width: 900px;
+        height: 100%;
         background-color: #000000;
         color: #FFFFFF;
         margin: 0 auto;
         padding-top:30px;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #F8B600;
-        border-top: none;
     }
 
     #my-side-nav {
-        width: 230px;
+        width: 300px;
         height: auto;
-        margin-left:20px;
+        margin-left: 20px;
         float:left;
         background: #000000;
     }
 
     #template-content {
-        width: 650px;
+        width: 580px;
         height: auto;
         float:right;
         background: #000000;
-    }
-
-    .side-block {
-        border:solid;
-        border-color: #AAAAAA;
-        border-width: 3px;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .my-title-side {
-        font-size: 28px;
-        text-decoration: underline;
-        margin: 0 0;
-        padding: 10px;
-        display: block;
-        background: #156796;
-        border-radius: 8px;
-    }
-
-    .side-content {
-        border: none;
-        color: #FFFFFF;
-        margin: 10px 10px;
-        font-size: 20px;
-        padding-top:10px;
-        color: #FFFFFF;
-    }
-
-    .ico {
-        width: 40px;
-        height: 40px;
-    }
-
-    #template-content {
         text-align: center;
         color: #FFFFFF;
         font-size: 13px;
+        margin: 0 0;
     }
 
-    .logo {
-        height: 136px;
-        width: 162px;
-        margin-left: 36px;
-        margin-bottom: 100px;
-        margin-top: 10px;
+    .side-block {
+        height: auto;
+    }
+    .side-block ul{
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #8C9BAC;
+        border-radius: 10px;
+    }
+
+    .my-title-side {
+        font-size: 45px;
+        color: #E47E1F;
+        font-weight: bold;
+        font-family: 'Arial';
+        margin: 0 0;
+        position: absolute;
+        left: 459px;
+        padding-top: 99px;
+        z-index: 999;
+    }
+
+    .side-block li {
+        list-style: none;
+        display: block;
+        font-size: 20px;
+        text-align: right;
+        height: 60px;
+    }
+
+    .side-block li span{
+        display: block;
+        font-size: 25x;
+        color: #E47E1F;
+        font-family: 'Arial';
+        font-weight: bold;
         float: left;
-        transition: 0.4s ease-out;
-        -moz-transition: 0.4s ease-out;
-        -webkit-transition: 0.4s ease-out;
-        -o-transition: 0.4s ease-out;
+        margin-left: 20px;
+    }
+
+    .side-block img {
+        margin-left: 10px;
+    }
+
+    .side-block p {
+        margin: 0;
+        float:right;
+        display: inline;
+        font-size: 20px;
+        font-family: 'Times New Roman';
+        text-align: left;
+        width:200px;
+        margin: 0 auto;
+    }
+
+    li.first {
+        height: 60px;
+        padding-top: 20px;
+    }
+
+    li.last {
+        height: 40px;
+        padding-bottom: 20px;
     }
 
     .map {
@@ -149,14 +169,6 @@
         line-height: 50px;
     }
 
-    .logo {
-
-    }
-
-    .logo:hover {
-       width: 200px;
-       height: 170px;
-    }
 </style>
 <div id="my-container">
     <div id="my-header">
@@ -173,39 +185,21 @@
     <div id="my-content-wrapper">
         <div id="my-side-nav">
             <div class="side-block contact">
+                <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
                 <span class="my-title-side">Kontakt</span>
-                <table class="side-content">
-                    <tr>
-                        <td>
-                            <img src="http://imageshack.us/a/img442/2281/1351512144telephoneblue.png" alt="phone" class="ico" />
-                        </td>
-                        <td>61 123 123</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="http://imageshack.us/a/img28/1710/1351512169emailopen.png" alt="e-mail" class="ico" />
-                        </td>
-                        <td>
-                            autorob@wp.pl
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="http://imageshack.us/a/img707/3969/1351512160home.png" alt="home" class="ico" />
-                        </td>
-                        <td>
-                            ul. Gdyńska 34 <br/>
-                            Czerwonak k/Poznania
-                        </td>
-                    </tr>
-                </table>
+                <ul>
+                    <li class="first"><span>Adres:</span><p>ul. Gdyńska 34 Czerownak k/Poznania</p></li>
+                    <li><span>Email:</span><p>auto-rob@wp.pl</p></li>
+                    <li class="last"><span>Telefon:</span><p>61 8 12 12 12</p></li>
+                </ul>
+            </div>
+            <div class="side-block delivery">
+                <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
+                <span class="my-title-side delivery">Dostawa</span>
             </div>
         </div>
         <div id="template-content">
             <span id="offer">W naszej ofercie części do aut marek:</span>
-            <img src="http://imageshack.us/a/img145/2743/renaultlogo.jpg" alt="renault" class="logo" />
-            <img src="http://imageshack.us/a/img17/6549/peugeot2002.jpg" alt="peugeot" class="logo" />
-            <img src="http://imageshack.us/a/img27/9194/citroenlogo3.gif" alt="citroen" class="logo" />
             <div class="description">
                 <p>SPRZEDAM RĄCZKA PODSUFITKI DO CITROENA C2 C3 C4</p>
             </div>
