@@ -1,10 +1,15 @@
 <style>
+<!--
     #my-container {
-        width: 1200px;
+        width: 60em;
         font-family: 'Georgia, serif';
-        background: #000000;
         color: #FFFFFF;
         margin: 0 auto;
+        height: auto;
+        font-size: 20px;
+        background-color: #000000;
+        position: relative;
+        overflow: hidden;
     }
 
     #my-container a {
@@ -15,129 +20,132 @@
     #my-header {
         width: 100%;
         height: auto;
-        background: #000000;
     }
+
     #header-logo {
         display: block;
-        height: 450px;
+        height: 500px;;
         width: 100%;
-        margin: 0 auto;
-        border-bottom-style: solid;
-        border-bottom-color: #E47E1F;
-        
-    }
-    #my-nav-top {
-        font-size: 20px;
-        color: #FFFFFF;
-        width: 900px;
         margin: 0 auto;
     }
 
+    #my-nav-top {
+        width: 60em;
+    }
+
     #my-nav-top ul {
-        margin: 0 auto;
-        padding-top:10px;
+        width: 100%;
+        padding-top: 1em;
+        border-top: solid;
+        border-top-color: #AA0206;
+        border-bottom: solid;
+        border-bottom-color: #AA0206;
+        box-shadow: 0 0 30px #AA0206;
+        border-width: 0.1px;
     }
 
     #my-nav-top li {
         list-style: none;
         display: inline-block;
-        padding: 20px;
         font-weight: bold;
-        transition: 0.2s ease-out;
-        -moz-transition: 0.2s ease-out;
-        -webkit-transition: 0.2s ease-out;
-        -o-transition: 0.2s ease-out;
-        border-radius: 50px;
-        margin-left: 40px;
+        padding: 1em;
+        margin-left: 5em;
+        transition: 0.2s linear;
+        -moz-transition: 0.2s linear;
     }
 
     #my-nav-top li:hover {
-        background-color:#E47E1F;
+        text-shadow: 3px 2px 3px #AA0206;
     }
 
     #my-content-wrapper {
-        width: 900px;
+        width: 43em;
         height: 100%;
-        background-color: #000000;
         color: #FFFFFF;
         margin: 0 auto;
-        padding-top:30px;
+        padding-top: 1em;
     }
 
     #my-side-nav {
-        width: 300px;
+        width: 15em;
         height: auto;
-        margin-left: 20px;
         float:left;
-        background: #000000;
+        font-size: 20px;
     }
 
     #template-content {
-        width: 580px;
+        width: 27em;
         height: auto;
-        float:right;
-        background: #000000;
+        float: right;
         text-align: center;
-        color: #FFFFFF;
-        font-size: 13px;
+        font-size: 20px;
         margin: 0 0;
     }
 
     .side-block {
         height: auto;
+        padding-bottom: 2em;
     }
+
     .side-block ul{
-        margin: 0 auto;
+        margin: 0 10px;;
         padding: 0;
-        width: 100%;
+        width: 14em;
         border-style: solid;
-        border-width: 2px;
-        border-color: #8C9BAC;
+        border-width: 0.5px;
+        border-color: #AA0206;
         border-radius: 10px;
+        box-shadow: 0 0 20px #AA0206;
+        position: relative;
+        top: -50px;
+        background: #000000;
+        font-size: 18px;
+    }
+
+    .my-side-title-img {
+        position: relative;
+    }
+
+    .my-side-title-img img {
+        margin-left: 2em;
+        width: 10em;
     }
 
     .my-title-side {
-        font-size: 45px;
-        color: #E47E1F;
+        font-size: 25px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 45px #AA0206;
         font-weight: bold;
         font-family: 'Arial';
-        margin: 0 0;
         position: absolute;
-        left: 459px;
-        padding-top: 99px;
+        top: 2.2em;
+        margin-left: 3.6em;
         z-index: 999;
     }
 
     .side-block li {
         list-style: none;
         display: block;
-        font-size: 20px;
         text-align: right;
-        height: 60px;
+        height: 20px;
+        padding-top: 20px;
     }
 
     .side-block li span{
         display: block;
-        font-size: 25x;
-        color: #E47E1F;
+        color: #EA1E1E;
         font-family: 'Arial';
         font-weight: bold;
         float: left;
-        margin-left: 20px;
-    }
-
-    .side-block img {
-        margin-left: 10px;
+        padding-left: 1em;
     }
 
     .side-block p {
-        margin: 0;
         float:right;
         display: inline;
-        font-size: 20px;
         font-family: 'Times New Roman';
         text-align: left;
-        width:200px;
+        width: 8em;
         margin: 0 auto;
     }
 
@@ -151,28 +159,53 @@
         padding-bottom: 20px;
     }
 
-    .map {
-        width: 361px;
-        height: 357px;
+    .delivery ul{
+        height: 110px;
+    }
+
+    .side-block:last-child {
+        padding-bottom: 0px;
+    }
+
+    .deliver-img {
+        width: 115px;
+        margin: 0 0.3em;
+    }
+
+    #poczta {
+        float: left;
+    }
+
+    #siodemka {
+        float: right;
+    }
+
+
+    .description p {
+        font-size: 30px;
+        color: "#FFFFFF";
+        margin: 0 0;
+        line-height: 50px;
+        text-align: justify;
+        margin-left: 10px;
+    }
+
+    .important {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    #my-footer {
+        clear:both;
         margin: 0 auto;
     }
 
-    #offer {
-        display: block;
-        font-size: 16px;
-    }
 
-    .description {
-        font-size: 30px;
-        color: "#FFFFFF";
-        margin: 0 20px;
-        line-height: 50px;
-    }
-
+ -->
 </style>
 <div id="my-container">
     <div id="my-header">
-        <img src="http://imageshack.us/a/img843/196/98360631.jpg" alt='header' id='header-logo'/>
+        <img src="http://dl.dropbox.com/u/31948496/david_header.png" alt='header' id='header-logo'/>
         <div id="my-nav-top">
            <ul>
                <li><a href="#">O mnie</a></li>
@@ -183,32 +216,60 @@
         </div>
     </div>
     <div id="my-content-wrapper">
+        <div id="template-content">
+            <div class="description">
+                <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                </p>
+            </div>
+            <div id="google-map">
+               
+            </div>
+        </div>
         <div id="my-side-nav">
             <div class="side-block contact">
-                <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
-                <span class="my-title-side">Kontakt</span>
+                <div class="my-side-title-img">
+                    <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
+                    <div class="my-title-side">
+                        <span>Kontakt</span>
+                    </div>
+                </div>
                 <ul>
                     <li class="first"><span>Adres:</span><p>ul. Gdyńska 34 Czerownak k/Poznania</p></li>
                     <li><span>Email:</span><p>auto-rob@wp.pl</p></li>
-                    <li class="last"><span>Telefon:</span><p>61 8 12 12 12</p></li>
+                    <li class="last"><span>Telefon:</span><p class="important">61 8 12 12 12</p></li>
                 </ul>
             </div>
             <div class="side-block delivery">
-                <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
-                <span class="my-title-side delivery">Dostawa</span>
+                <div class="my-side-title-img">
+                    <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
+                    <div class="my-title-side">
+                        <span>Dostawa</span>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <img src="http://dl.dropbox.com/u/31948496/zpoczta.gif" alt="poczta" class="deliver-img" id="poczta"/>
+                        <img src="http://dl.dropbox.com/u/31948496/siodemka.gif" alt="siodemka" class="deliver-img" id="siodemka"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="side-block payment">
+                <div class="my-side-title-img">
+                    <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
+                    <div class="my-title-side">
+                        <span>Płatnosci</span>
+                    </div>
+                </div>
+                <ul>
+                <li></li>
+                </ul>
             </div>
         </div>
-        <div id="template-content">
-            <span id="offer">W naszej ofercie części do aut marek:</span>
-            <div class="description">
-                <p>SPRZEDAM RĄCZKA PODSUFITKI DO CITROENA C2 C3 C4</p>
-            </div>
-            <div id="google-map">
-                <a href="https://mapy.google.pl/maps?f=q&amp;source=embed&amp;hl=pl&amp;geocode=&amp;q=Gdy%C5%84ska+34,+Czerwonak&amp;aq=0&amp;oq=gdy&amp;sll=52.400531,16.901666&amp;sspn=0.335161,0.75531&amp;ie=UTF8&amp;hq=&amp;hnear=Gdy%C5%84ska+34,+62-004+Czerwonak,+pozna%C5%84ski,+wielkopolskie&amp;ll=52.467118,16.980993&amp;spn=0.334702,0.75531&amp;t=m&amp;z=11">
-                    <img src="http://img441.imageshack.us/img441/2733/mapabs.jpg" alt="mapa" class="map" /><br/>
-                    <span>Sprawdź jak dojechać</span>
-                </a>
-            </div>
-        </div>
+    </div>
+    <div id="my-footer">
+        <img src="http://dl.dropbox.com/u/31948496/clocks-footer.jpg" alt="dashboard" />
     </div>
 </div>
