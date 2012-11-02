@@ -54,10 +54,6 @@
         -moz-transition: 0.2s linear;
     }
 
-    #my-nav-top li:hover {
-        text-shadow: 3px 2px 3px #AA0206;
-    }
-
     #my-content-wrapper {
         width: 43em;
         height: 100%;
@@ -83,44 +79,35 @@
     }
 
     .side-block {
+        position: relative;
         height: auto;
-        padding-bottom: 2em;
+    }
+
+    .contact {
+        margin-bottom: 8em;
+    }
+
+    .delivery {
+        margin-bottom: 4em;
+    }
+
+    .details {
+        position: absolute;
+        top: 220px;
     }
 
     .side-block ul{
-        margin: 0 10px;;
+        margin: 0 0px;
         padding: 0;
         width: 14em;
         border-style: solid;
         border-width: 0.5px;
-        border-color: #AA0206;
+        border-color: #A2C9CF;
         border-radius: 10px;
-        box-shadow: 0 0 20px #AA0206;
-        position: relative;
-        top: -50px;
+        box-shadow: 0 0 20px #A2C9CF;
         background: #000000;
         font-size: 18px;
-    }
-
-    .my-side-title-img {
-        position: relative;
-    }
-
-    .my-side-title-img img {
-        margin-left: 2em;
-        width: 10em;
-    }
-
-    .my-title-side {
-        font-size: 25px;
-        color: #FFFFFF;
-        text-shadow: 0px 0px 45px #AA0206;
-        font-weight: bold;
-        font-family: 'Arial';
-        position: absolute;
-        top: 2.2em;
-        margin-left: 3.6em;
-        z-index: 999;
+        margin-bottom: 10em;
     }
 
     .side-block li {
@@ -129,6 +116,10 @@
         text-align: right;
         height: 20px;
         padding-top: 20px;
+    }
+
+    .delivery li {
+        height: 90px;
     }
 
     .side-block li span{
@@ -159,9 +150,6 @@
         padding-bottom: 20px;
     }
 
-    .delivery ul{
-        height: 110px;
-    }
 
     .side-block:last-child {
         padding-bottom: 0px;
@@ -180,7 +168,6 @@
         float: right;
     }
 
-
     .description p {
         font-size: 30px;
         color: "#FFFFFF";
@@ -198,6 +185,11 @@
     #my-footer {
         clear:both;
         margin: 0 auto;
+    }
+    
+    .clock {
+        position: relative;
+        overflow: visible;
     }
 
 
@@ -230,46 +222,34 @@
         </div>
         <div id="my-side-nav">
             <div class="side-block contact">
-                <div class="my-side-title-img">
-                    <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
-                    <div class="my-title-side">
-                        <span>Kontakt</span>
-                    </div>
-                </div>
-                <ul>
-                    <li class="first"><span>Adres:</span><p>ul. Gdyńska 34 Czerownak k/Poznania</p></li>
-                    <li><span>Email:</span><p>auto-rob@wp.pl</p></li>
-                    <li class="last"><span>Telefon:</span><p class="important">61 8 12 12 12</p></li>
-                </ul>
+                <img src='http://dl.dropbox.com/u/31948496/contact.png' alt='clock' />
+                <div class="details">
+                    <ul>
+                        <li class="first"><span>Adres:</span><p>ul. Gdyńska 34 Czerownak k/Poznania</p></li>
+                        <li><span>Email:</span><p>auto-rob@wp.pl</p></li>
+                        <li class="last"><span>Telefon:</span><p class="important">61 8 12 12 12</p></li>
+                    </ul>
+               </div>
             </div>
             <div class="side-block delivery">
-                <div class="my-side-title-img">
-                    <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
-                    <div class="my-title-side">
-                        <span>Dostawa</span>
-                    </div>
+                <img src='http://dl.dropbox.com/u/31948496/delivery.png' alt='clock' />
+                <div class="details">
+                    <ul>
+                        <li>
+                            <img src="http://dl.dropbox.com/u/31948496/zpoczta.gif" alt="poczta" class="deliver-img" id="poczta"/>
+                            <img src="http://dl.dropbox.com/u/31948496/siodemka.gif" alt="siodemka" class="deliver-img" id="siodemka"/>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        <img src="http://dl.dropbox.com/u/31948496/zpoczta.gif" alt="poczta" class="deliver-img" id="poczta"/>
-                        <img src="http://dl.dropbox.com/u/31948496/siodemka.gif" alt="siodemka" class="deliver-img" id="siodemka"/>
-                    </li>
-                </ul>
             </div>
-            <div class="side-block payment">
-                <div class="my-side-title-img">
-                    <img src='http://img15.imageshack.us/img15/4687/clocksmaller.png' alt='clock' />
-                    <div class="my-title-side">
-                        <span>Płatnosci</span>
-                    </div>
+            <div class="side-block delivery">
+                <img src='http://dl.dropbox.com/u/31948496/payment.png' alt='clock' />
+                <div class="details">
+                    <ul>
+                        <li>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                <li></li>
-                </ul>
             </div>
         </div>
-    </div>
-    <div id="my-footer">
-        <img src="http://dl.dropbox.com/u/31948496/clocks-footer.jpg" alt="dashboard" />
-    </div>
 </div>
